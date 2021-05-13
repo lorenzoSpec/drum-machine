@@ -12,12 +12,72 @@ class App extends React.Component {
 
   render(){
     return (
-      <div>
-        <h1>Drum Machine</h1>
+      <div id="whole">
+        <Header />
+
+        <div id="drum-machine">
+          <DrumDiv />
+
+          <div id="tools">
+            <Display />
+            <Volume />
+            <Toggles />
+          </div>
+        </div>
       </div>
     ); 
   }
 }
 
+// Header of App
+const Header = () => {
+  return (
+    <div id="header">
+      <h1>Drum Machine</h1>
+      <a href="#">My Portfolio</a>
+    </div>
+  );
+};
+
+const DrumDiv = () => {
+  return (
+    <div id="drum">
+      <div className="drum-pad" id="Q">Q</div>
+      <div className="drum-pad" id="W">W</div>
+      <div className="drum-pad" id="E">E</div>
+      <div className="drum-pad" id="A">A</div>
+      <div className="drum-pad" id="S">S</div>
+      <div className="drum-pad" id="D">D</div>
+      <div className="drum-pad" id="Z">Z</div>
+      <div className="drum-pad" id="X">X</div>
+      <div className="drum-pad" id="C">C</div>
+    </div>
+  );
+};
+
+const Display = () => {
+  return (
+    <div id="display">
+      
+    </div>
+  );
+};
+
+const Volume = () => {
+  return (
+    <div id="volume">
+
+    </div>
+  );
+};
+
+const Toggles = () => {
+  return(
+    <div id="toggles">
+      <button>Power</button>
+      <button>Bank</button>
+    </div>
+  );
+}
 
 export default App;
