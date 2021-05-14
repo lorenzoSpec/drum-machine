@@ -66,7 +66,7 @@ const Display = () => {
 const Volume = () => {
   return (
     <div id="volume">
-
+      <input type="range" min="1" max="100" value="50" id="volume-range" />
     </div>
   );
 };
@@ -74,8 +74,8 @@ const Volume = () => {
 const Toggles = () => {
   return(
     <div id="toggles">
-      <button>Power</button>
-      <button>Bank</button>
+      <button id="power-btn" class="onOff">Power</button>
+      <button id="bank-btn" class="onOff">Bank</button>
     </div>
   );
 }
