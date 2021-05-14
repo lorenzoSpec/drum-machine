@@ -48,26 +48,46 @@ body, #root, #whole {
   height: 304px;
   background-color: #0090DD;
   color: white;
-  border-radius: 37px;
+  border-radius: 20px;
   display: flex;
 }
 
 #drum {
   width: 60%;
   height: 95%;
-  margin: 2.5% 2%;
+  margin: 1.8% 2%;
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: space-evenly;
 }
 
 .drum-pad {
-  width: 70px;
-  height: 70px;
+  width: 80px;
+  height: 80px;
   background-color: #014366;
   color: white;
-  border-radius: ;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  font-size: 30px;
 }
 
 #tools {
   width: 34%;
   height: 95%;
   margin: 2.5% 2%;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  justify-content: center;
+}
+
+#display {
+  width: 160px;
+  height: 60px;
+  background-color: #014366;
+  color: white;
+  border-radius: 10px;
 }
