@@ -44,29 +44,27 @@ body, #root, #whole {
 /* ============= DRUM MACHINE =============== */
 
 #drum-machine {
-  width: 540px;
-  height: 350px;
+  width: 525px;
+  height: 304px;
   background-color: #0090DD;
   color: white;
   border-radius: 20px;
-  display: flex;
-  align-items: center;
+  display: grid;
+  grid-template-columns: 242px 172px;
+  grid-column-gap: 35px;
   justify-content: center;
+  align-items: center;
 }
 
 #drum {
-  width: 60%;
-  height: 85%;
-  margin: 1.8% 2%;
-  display: flex;
-  flex-flow: row wrap;
-  align-items: center;
-  justify-content: space-evenly;
+  display: grid;
+  grid-template-columns: 70px 70px 70px;
+  grid-template-rows: 70px 70px 70px;
+  justify-content: center;
+  grid-gap: 10px;
 }
 
 .drum-pad {
-  width: 80px;
-  height: 80px;
   background-color: #014366;
   color: white;
   display: flex;
@@ -77,9 +75,7 @@ body, #root, #whole {
 }
 
 #tools {
-  width: 34%;
-  height: 95%;
-  margin: 2.5% 2%;
+  height: 90%;
   display: flex;
   flex-flow: column nowrap;
   align-items: center;
@@ -87,11 +83,11 @@ body, #root, #whole {
 }
 
 #display {
-  width: 160px;
-  height: 60px;
+  width: 136px;
+  height: 57px;
   background-color: #014366;
   color: white;
-  border-radius: 10px;
+  border-radius: 5px;
 }
 
 #volume-range {
@@ -128,12 +124,11 @@ body, #root, #whole {
 
 
 .onOff {
+  width: 65px;
+  height: 26px;
   background-color: #014366;
   color: white;
-  border: none;
-  border-radius: 5px;
+  border: 1px solid white;
   margin: 0 5px;
-  padding: 5px 10px;
-  opacity: 0.8;
 }
 
