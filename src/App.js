@@ -34,14 +34,14 @@ const Header = () => {
   return (
     <div id="header">
       <h1>Drum Machine</h1>
-      <a href="#">My Portfolio</a>
+      <a href="https://lorenzospec.github.io">My Portfolio</a>
     </div>
   );
 };
 
 const DrumDiv = () => {
   return (
-    <div id="drum">
+    <div id="drum">      
       <div className="drum-pad" id="Q">Q</div>
       <div className="drum-pad" id="W">W</div>
       <div className="drum-pad" id="E">E</div>
